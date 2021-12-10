@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Web Programming</title>
+</head>
+<body>
+    <div>ここは,t1.html(インクルードの前)</div>
+    <div>t1.htmlないでのドット {{ . }} </div>
+    <hr/>
+    {{template "t2.html" .}}
+    <hr/>
+    <div>ここはt1.html(インクルードの後</div>
+    <hr/>
+    <div>{{ 12.3456 | printf "%.2f"}}</div>
+</body>
+</html>
